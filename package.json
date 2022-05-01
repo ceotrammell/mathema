@@ -1,0 +1,23 @@
+{
+  "name": "mathema",
+  "version": "1.0.0",
+  "description": "Make Math Merry",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ceotrammell/mathema.git"
+  },
+  "keywords": [
+    "javascript",
+    "math"
+  ],
+  "author": "Kyle D. Trammell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ceotrammell/mathema/issues"
+  },
+  "homepage": "https://github.com/ceotrammell/mathema#readme"
+}
