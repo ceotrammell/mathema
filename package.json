@@ -1,6 +1,6 @@
 {
   "name": "mathema",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Make Math Merry",
   "main": "./lib/cjs/mathema.ts",
   "scripts": {
