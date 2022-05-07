@@ -1,15 +1,15 @@
 {
   "name": "mathema",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Make Math Merry",
-  "main": "./lib/cjs/mathema.ts",
+  "main": "./lib/cjs/mathema.js",
   "scripts": {
     "tsc": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
     "prepublish": "npm run tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "type": "module",
-  "module": "./lib/esm/mathema.ts",
+  "module": "./lib/esm/mathema.js",
   "files": [
     "lib/"
   ],
