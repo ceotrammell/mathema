@@ -29,7 +29,10 @@ _"Make Math Merry"_
 - Open Source
 
 	**Current Features:**
-	
+	    
+	**Basics:**
+	    
+	    
 		Addition
 
 		Subtraction
@@ -45,6 +48,27 @@ _"Make Math Merry"_
 		Two Arrays
 
 		Multi Dimensional Arrays
+
+	**Geometry:**
+		    
+		    
+		Circles
+
+		Cylinders
+
+		Rectangles
+
+		Spheres
+		
+		Squares
+		
+		Triangles
+
+	***Geometry Supports:***
+
+		Ci,Cy,Re,Sp,Sq: Area(or surface area) & Perimeter
+
+		Triangles: Perimeter & Area (height based, ASA, SAS, SSS)
 		
 ## Usage
 
