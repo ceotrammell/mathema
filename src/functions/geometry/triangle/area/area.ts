@@ -12,16 +12,16 @@ import { helpers } from '../../../../helpers/helpers.js';
 export function asa(b: number, a: number, y: number): number {    
     let unknownAngle = constants.triangle - b - y;
 
-    if (b + y >=180) {
+    if (b + y >= constants.triangle) {
         throw new Error('The angle sum b + y of triangle must be in the range from 0° to 180°.');
     }
-    if (b >=180) {
+    if (b >= constants.triangle) {
         throw new Error('The angle b of triangle must be in the range from 0° to 180°.');
     }
-    if (y >=180) {
+    if (y >= constants.triangle) {
         throw new Error('The angle y of triangle must be in the range from 0° to 180°.');
     }
-    return 0.5 * (a)**2 * ((Math.sin(b * Math.PI / 180) * Math.sin(y * Math.PI / 180)) / (Math.sin(unknownAngle * Math.PI / 180)));
+    return 0.5 * (a)**2 * ((Math.sin(b * Math.PI / constants.triangle) * Math.sin(y * Math.PI / constants.triangle)) / (Math.sin(unknownAngle * Math.PI / constants.triangle)));
 }
 
 /**
@@ -46,10 +46,10 @@ export function height(b: number, h: number): number {
 */
 export function sas(a: number, y: number, b: number): number {    
     
-    if (y >=180) {
+    if (y >= constants.triangle) {
         throw new Error('The angle y of triangle must be in the range from 0° to 180°.');
     }
-    return  0.5 * a * b * Math.sin(y * Math.PI / 180);
+    return  0.5 * a * b * Math.sin(y * Math.PI / constants.triangle);
 }
 
 /**
