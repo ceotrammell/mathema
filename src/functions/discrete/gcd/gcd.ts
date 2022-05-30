@@ -3,7 +3,7 @@ import { helpers } from "../../../helpers/helpers";
 let isParallel: boolean = false;
 
 /**
-* Take in an array of numbers and find the greatest common divisor via Euclidean Algorithm, as well invode parallel (fork-join pattern) as needed
+* Take in an array of numbers and find the greatest common divisor via Euclidean Algorithm, as well invoke parallel (fork-join pattern) as needed
 * @param {Array<any>} array Array to loop
 * @return {number} array `array` used as greatest common divisor, returned as a number  
 */
