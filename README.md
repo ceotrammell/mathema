@@ -47,94 +47,70 @@ _"Make Math Merry"_
 
 **Algebra:**
 
-Arithmetic
-	
+	Arithmetic
 
- - GCD 	
- - LCM
+		- GCD 	
+		- LCM
 
 ***Algebra Supports:***
 
-  
+	Pairs (standard operations of ℝ using two numbers)
+	
+	Two Arrays
 
-Simple (standard operations of ℝ)
-
-  
-
-Two Arrays
-
-  
-
-Multi Dimensional Arrays
+	Multi Dimensional Arrays
 
 **Basics:**
 
-Addition
+	Addition
 
-  
+	Subtraction
 
-Subtraction
+	Multiplication
 
-  
-
-Multiplication
-
-  
-
-Division
-
-  
+	Division
 
 ***Basics (ASMD) Supports:***
 
-  
+	Simple (standard operations of ℝ)
+	
+	Two Arrays
 
-Simple (standard operations of ℝ)
-
-  
-
-Two Arrays
-
-  
-
-Multi Dimensional Arrays
+	Multi Dimensional Arrays
 
 **Discrete:**
 
-GCD (Euclidean Algorithm, invoke parallel (fork-join pattern) as needed)
+	GCD (Euclidean Algorithm, invoke parallel (fork-join pattern) as needed)
   
+  ***Discrete Supports:***
+
+	Pairs (standard operations of ℝ using two numbers)
+	
+	Two Arrays
+
+	Multi Dimensional Arrays
 
 **Geometry:**
 
-Circles
+	Circles
 
-  
+	Cylinders
 
-Cylinders
+	Rectangles
 
-  
+	Spheres
 
-Rectangles
+	Squares
 
-  
-
-Spheres
-
-Squares
-
-Triangles
+	Triangles
 
   
 
 ***Geometry Supports:***
 
-  
+	Ci,Cy,Re,Sp,Sq: Area(or surface area) & Perimeter
 
-Ci,Cy,Re,Sp,Sq: Area(or surface area) & Perimeter
-
-  
-
-Triangles: Perimeter & Area (height based, ASA, SAS, SSS)
+	Triangles: Perimeter & Area (height based, ASA, SAS, SSS)
 
 ## Usage
 
