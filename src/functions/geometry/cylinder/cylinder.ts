@@ -5,7 +5,7 @@ import { helpers } from '../../../helpers/helpers.js';
 * take in 2 values, height and volume to get final diameter
 * @param  {number} h value of height
 * @param  {number} v value of volume
-* @return {number} Diameter of 2 * (√ volume:`v`/π * height:`h`)
+* @return {number} diameter of 2 * (√ volume:`v`/π * height:`h`)
 */
 export function diameter(h: number, v: number): number {
 
@@ -16,7 +16,7 @@ export function diameter(h: number, v: number): number {
 * take in 2 values, radius and height to get final surface area
 * @param  {number} r value of radius
 * @param  {number} h value of height
-* @return {number} Volume of (2π * radius:`r` * height:`h`) + (2π * radius:`r`^2)
+* @return {number} volume of (2π * radius:`r` * height:`h`) + (2π * radius:`r`^2)
 */
 export function surfaceArea(r: number, h: number): number {
 
@@ -27,7 +27,7 @@ export function surfaceArea(r: number, h: number): number {
 * take in 2 values, radius and height to get final volume
 * @param  {number} r value of radius
 * @param  {number} h value of height
-* @return {number} Volume of π * radius:`r`^2 * height:`h`
+* @return {number} volume of π * radius:`r`^2 * height:`h`
 */
 export function volume(r: number, h: number): number {
 

@@ -3,7 +3,7 @@ import { constants } from '../../../constants/constants.js';
 /**
 * take in 1 value, radius to get final surface area
 * @param  {number} r value of radius
-* @return {number} Surface Area of 4π * radius:`r`^2
+* @return {number} surface area of 4π * radius:`r`^2
 */
 export function surfaceArea(r: number): number {
 
@@ -13,7 +13,7 @@ export function surfaceArea(r: number): number {
 /**
 * take in 1 value, radius to get final surface area
 * @param  {number} r value of radius
-* @return {number} Surface Area of (4/3)π * radius:`r`^3
+* @return {number} surface area of (4/3)π * radius:`r`^3
 */
 export function volume(r: number): number {
     

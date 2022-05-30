@@ -5,7 +5,7 @@ import { area } from './area/area.js';
 * @param  {number} a value of 1st side
 * @param  {number} b value of 2nd side
 * @param  {number} c value of 3rd side
-* @return {number} Perimeter of `a` + `b` + `c`
+* @return {number} perimeter of `a` + `b` + `c`
 */
 export function perimeter(a: number, b: number, c: number): number {
 

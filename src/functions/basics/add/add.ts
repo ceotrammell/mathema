@@ -1,20 +1,20 @@
 import { helpers } from '../../../helpers/helpers.js';
 
 /**
-* Add two values, x + y.
-* @param  {number} x First value to add
-* @param  {number} y Second value to add
-* @return {number} Sum of `x` and `y`
+* add two values, x + y.
+* @param  {number} x first value to add
+* @param  {number} y second value to add
+* @return {number} sum of `x` and `y`
 */
 export function simple(x: number, y: number): number {
     return x + y;
 };
 
 /**
-* Add two array value pairs together, arr1 index value + arr2 index value.
-* @param  {Array<any>} arr1 Array 1 to loop
-* @param  {Array<any>} arr1 Array 2 to loop
-* @return {Array<any>} Array containing new sums of correlating value pairs from `arr1` and `arr2`
+* add two array value pairs together, arr1 index value + arr2 index value.
+* @param  {Array<any>} arr1 array 1 to loop
+* @param  {Array<any>} arr1 array 2 to loop
+* @return {Array<any>} array containing new sums of correlating value pairs from `arr1` and `arr2`
 */
 export function twoArrays(arr1: Array<any>, arr2: Array<any>): Array<any> {
     const val = (arr1 || []).map(function (num, idx) {
@@ -24,9 +24,9 @@ export function twoArrays(arr1: Array<any>, arr2: Array<any>): Array<any> {
 };
 
 /**
-* Loop 1d, 2d or multiD array and add all values together
-* @param  {Array<any>} arr Array to loop
-* @return {number} Sum of all values in `arr`
+* loop 1d, 2d or multiD array and add all values together
+* @param  {Array<any>} arr array to loop
+* @return {number} sum of all values in `arr`
 */
 export function multiD(arr: Array<any>): Array<any> {
     const val = ((helpers.flatten(arr)) || []).reduce((x: number,y: number) => x + y);
