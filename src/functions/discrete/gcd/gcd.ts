@@ -41,7 +41,6 @@ export function arr(array: Array<any>): number {
 * @param {number} y second number
 * @return {number} number `x` and number `y` used as greatest common divisor, returned as a number  
 */
-
 export function pair(x: number, y: number): number {
     while (x && y && x !== y) {
         if(x > y){

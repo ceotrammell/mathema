@@ -31,14 +31,6 @@ _"Make Math Merry"_
 
 ## Features
 
-  
-
-  
-
-  
-
--  *Under Construction*
-
 - Open Source
 
   
@@ -49,8 +41,8 @@ _"Make Math Merry"_
 
 	Arithmetic
 
-		- GCD 	
-		- LCM
+	- GCD 	
+	- LCM
 
 ***Algebra Supports:***
 
@@ -80,15 +72,22 @@ _"Make Math Merry"_
 
 **Discrete:**
 
+	Combinations
 	GCD (Euclidean Algorithm, invoke parallel (fork-join pattern) as needed)
-  
+	Permutations
+	Sets Intersections
+	Sets Unions
+
   ***Discrete Supports:***
 
-	Pairs (standard operations of ℝ using two numbers)
-	
+	Pairs (standard operations of ℝ using two numbers) 
+	- Combinations, GCD, Permutations
+
 	Two Arrays
+	- GCD, Sets Intersections & Unions
 
 	Multi Dimensional Arrays
+	- GCD, Sets Intersections & Unions
 
 **Geometry:**
 

@@ -31,6 +31,16 @@ export function square(n: number, i: number, j: number): number {
     }
  }
 
+ export function factorialize(num: any): any {
+   if (num < 0) 
+         return -1;
+   else if (num == 0) 
+         return 1;
+   else {
+         return (num * factorialize(num - 1));
+   }
+}
+
 export const helpers = {
     flatten,
     sqrt,
