@@ -2,6 +2,16 @@ function flatten(arr: Array<any>): Array<any> {
     return arr.reduce((acc, cur) => acc.concat(Array.isArray(cur) ? flatten(cur) : cur), []);
 };
 
+function parse(str: string) {
+   return Function(`'use strict'; return (${str})`)()
+ }
+
+ function sliceBuilder(str: string, splitAt: number, inject: any) {
+   let front = str.slice(0, splitAt);
+   let back  = str.slice(splitAt, str.length);
+   return front + inject + back;
+ }
+ 
 export function square(n: number, i: number, j: number): number {
 
     let mid = (i + j) / 2;
@@ -43,5 +53,7 @@ export function square(n: number, i: number, j: number): number {
 
 export const helpers = {
     flatten,
+    parse,
+    sliceBuilder,
     sqrt,
 };

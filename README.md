@@ -1,7 +1,11 @@
 
   
 
+  
+
 # MATHEMA!
+
+  
 
   
 
@@ -15,7 +19,11 @@ _"Make Math Merry"_
 
   
 
+  
+
 [![Version](https://img.shields.io/npm/v/mathema.svg)](https://www.npmjs.com/package/mathema)
+
+  
 
   
 
@@ -29,89 +37,196 @@ _"Make Math Merry"_
 
   
 
+  
+
 ## Features
+
+  
 
 - Open Source
 
   
 
+  
+
 **Current Features:**
+
+  
 
 **Algebra:**
 
-	Arithmetic
+  
 
-	- GCD 	
-	- LCM
+Arithmetic
+
+  
+
+- GCD
+
+- LCM
+
+  
 
 ***Algebra Supports:***
 
-	Pairs (standard operations of ℝ using two numbers)
-	
-	Two Arrays
+  
 
-	Multi Dimensional Arrays
+Pairs (standard operations of ℝ using two numbers)
+
+Two Arrays
+
+  
+
+Multi Dimensional Arrays
+
+  
 
 **Basics:**
 
-	Addition
+  
 
-	Subtraction
+Addition
 
-	Multiplication
+  
 
-	Division
+Subtraction
+
+  
+
+Multiplication
+
+  
+
+Division
+
+  
 
 ***Basics (ASMD) Supports:***
 
-	Simple (standard operations of ℝ)
-	
-	Two Arrays
+  
 
-	Multi Dimensional Arrays
+Simple (standard operations of ℝ)
+
+Two Arrays
+
+  
+
+Multi Dimensional Arrays
+
+  
+**Conversion:**
+
+  
+
+Area
+
+  
+
+Length
+
+  
+
+Mass
+
+  
+
+Temp
+
+  
+Volume
+
+  
+***Conversion Supports:***
+
+  
+
+Solo (single number/one at a time) conversions only
+
+  
 
 **Discrete:**
 
-	Combinations
-	GCD (Euclidean Algorithm, invoke parallel (fork-join pattern) as needed)
-	Permutations
-	Sets Intersections
-	Sets Unions
+  
 
-  ***Discrete Supports:***
+Combinations
 
-	Pairs (standard operations of ℝ using two numbers) 
-	- Combinations, GCD, Permutations
+GCD (Euclidean Algorithm, invoke parallel (fork-join pattern) as needed)
 
-	Two Arrays
-	- GCD, Sets Intersections & Unions
+Permutations
 
-	Multi Dimensional Arrays
-	- GCD, Sets Intersections & Unions
+Sets Intersections
+
+Sets Unions
+
+  
+
+***Discrete Supports:***
+
+  
+
+Pairs (standard operations of ℝ using two numbers)
+
+- Combinations, GCD, Permutations
+
+  
+
+Two Arrays
+
+- GCD, Sets Intersections & Unions
+
+  
+
+Multi Dimensional Arrays
+
+- GCD, Sets Intersections & Unions
+
+  
 
 **Geometry:**
 
-	Circles
+  
 
-	Cylinders
+Circles
 
-	Rectangles
+  
 
-	Spheres
+Cylinders
 
-	Squares
+  
 
-	Triangles
+Rectangles
+
+  
+
+Spheres
+
+  
+
+Squares
+
+  
+
+Triangles
+
+  
 
   
 
 ***Geometry Supports:***
 
-	Ci,Cy,Re,Sp,Sq: Area(or surface area) & Perimeter
+  
 
-	Triangles: Perimeter & Area (height based, ASA, SAS, SSS)
+Ci,Cy,Re,Sp,Sq: Area(or surface area) & Perimeter
+
+  
+
+Triangles: Perimeter & Area (height based, ASA, SAS, SSS)
+
+  
 
 ## Usage
+
+  
 
   
 
