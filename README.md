@@ -52,102 +52,77 @@ _"Make Math Merry"_
 **Current Features:**
 
   
-
-**Algebra:**
-
-  
-
+```
 Arithmetic
 
-  
-
-- GCD
-
-- LCM
+	- GCD 	
+	- LCM
+```
 
   
 
 ***Algebra Supports:***
 
   
-
+```
 Pairs (standard operations of ℝ using two numbers)
 
 Two Arrays
 
-  
-
 Multi Dimensional Arrays
-
+```
   
 
 **Basics:**
 
   
-
+```
 Addition
-
-  
 
 Subtraction
 
-  
-
 Multiplication
 
-  
-
 Division
-
+```
   
 
 ***Basics (ASMD) Supports:***
 
   
-
+```
 Simple (standard operations of ℝ)
 
 Two Arrays
 
-  
-
 Multi Dimensional Arrays
-
+```
   
 **Conversion:**
 
   
-
+```
 Area
-
-  
 
 Length
 
-  
-
 Mass
-
-  
 
 Temp
 
-  
 Volume
-
+```
   
 ***Conversion Supports:***
 
   
-
+```
 Solo (single number/one at a time) conversions only
-
-  
-
+```
 **Discrete:**
 
   
-
+```
 Combinations
 
 GCD (Euclidean Algorithm, invoke parallel (fork-join pattern) as needed)
@@ -157,57 +132,43 @@ Permutations
 Sets Intersections
 
 Sets Unions
-
+```
   
 
 ***Discrete Supports:***
 
   
-
+```
 Pairs (standard operations of ℝ using two numbers)
 
-- Combinations, GCD, Permutations
-
-  
+	- Combinations, GCD, Permutations
 
 Two Arrays
 
-- GCD, Sets Intersections & Unions
-
-  
+	- GCD, Sets Intersections & Unions
 
 Multi Dimensional Arrays
 
-- GCD, Sets Intersections & Unions
-
+	- GCD, Sets Intersections & Unions
+```
   
 
 **Geometry:**
 
   
-
+```
 Circles
-
-  
 
 Cylinders
 
-  
-
 Rectangles
-
-  
 
 Spheres
 
-  
-
 Squares
 
-  
-
 Triangles
-
+```
   
 
   
@@ -215,13 +176,11 @@ Triangles
 ***Geometry Supports:***
 
   
-
+```
 Ci,Cy,Re,Sp,Sq: Area(or surface area) & Perimeter
 
-  
-
 Triangles: Perimeter & Area (height based, ASA, SAS, SSS)
-
+```
   
 
 ## Usage
