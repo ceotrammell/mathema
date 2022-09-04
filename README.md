@@ -117,7 +117,8 @@ Volume
 
   
 ```
-Solo (single number/one at a time) conversions only
+Converion Type (full or abbreviated) -> 'inch' or 'in'
+Quantity (single number/one argument at a time)
 ```
 **Discrete:**
 
