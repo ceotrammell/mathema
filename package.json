@@ -1,0 +1,35 @@
+{
+  "name": "mathema",
+  "version": "1.0.7",
+  "description": "Make Math Merry",
+  "main": "./lib/cjs/mathema.js",
+  "scripts": {
+    "tsc": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
+    "prepublish": "npm run tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "module": "./lib/esm/mathema.js",
+  "files": [
+    "lib/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ceotrammell/mathema.git"
+  },
+  "keywords": [
+    "javascript",
+    "math",
+    "mathema"
+  ],
+  "author": "Kyle D. Trammell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ceotrammell/mathema/issues"
+  },
+  "homepage": "https://github.com/ceotrammell/mathema#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.31",
+    "typescript": "^4.6.4"
+  }
+}
