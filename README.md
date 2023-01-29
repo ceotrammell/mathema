@@ -3,7 +3,11 @@
 
   
 
+  
+
 # MATHEMA!
+
+  
 
   
 
@@ -21,7 +25,11 @@ _"Make Math Merry"_
 
   
 
+  
+
 [![Version](https://img.shields.io/npm/v/mathema.svg)](https://www.npmjs.com/package/mathema)
+
+  
 
   
 
@@ -39,7 +47,11 @@ _"Make Math Merry"_
 
   
 
+  
+
 ## Features
+
+  
 
   
 
@@ -49,127 +61,216 @@ _"Make Math Merry"_
 
   
 
+  
+
 **Current Features:**
 
   
-```
-Arithmetic
 
-	- GCD 	
-	- LCM
 ```
+
+Arithmetic:
+
+GCD
+
+LCM
+
+```
+
+  
 
   
 
 ***Algebra Supports:***
 
   
+
 ```
+
 Pairs (standard operations of ℝ using two numbers)
+
+  
 
 Two Arrays
 
+  
+
 Multi Dimensional Arrays
+
 ```
+
   
 
 **Basics:**
 
   
+
 ```
+
 Addition
+
+  
 
 Subtraction
 
+  
+
 Multiplication
 
+  
+
 Division
+
 ```
+
   
 
 ***Basics (ASMD) Supports:***
 
   
+
 ```
+
 Simple (standard operations of ℝ)
+
+  
 
 Two Arrays
 
-Multi Dimensional Arrays
-```
   
+
+Multi Dimensional Arrays
+
+```
+
 **Conversion:**
 
   
+
 ```
+
 Area
+
+  
 
 Length
 
+  
+
 Mass
+
+  
 
 Temp
 
-Volume
-```
   
+
+Volume
+
+```
+
 ***Conversion Supports:***
 
   
+
 ```
+
 Converion Type (full or abbreviated) -> 'inch' or 'in'
+
 Quantity (single number/one argument at a time)
+
 ```
+
 **Discrete:**
 
   
+
 ```
+
 Combinations
+
+  
 
 GCD (Euclidean Algorithm, invoke parallel (fork-join pattern) as needed)
 
+  
+
 Permutations
+
+  
 
 Sets Intersections
 
+  
+
 Sets Unions
+
 ```
+
   
 
 ***Discrete Supports:***
 
   
+
 ```
+
 Pairs (standard operations of ℝ using two numbers)
 
-	- Combinations, GCD, Permutations
+  
+
+- Combinations, GCD, Permutations
+
+  
 
 Two Arrays
 
-	- GCD, Sets Intersections & Unions
+  
+
+- GCD, Sets Intersections & Unions
+
+  
 
 Multi Dimensional Arrays
 
-	- GCD, Sets Intersections & Unions
+  
+
+- GCD, Sets Intersections & Unions
+
 ```
+
   
 
 **Geometry:**
 
   
+
 ```
+
 Circles
+
+  
 
 Cylinders
 
+  
+
 Rectangles
+
+  
 
 Spheres
 
+  
+
 Squares
 
+  
+
 Triangles
+
 ```
+
   
 
   
@@ -177,14 +278,22 @@ Triangles
 ***Geometry Supports:***
 
   
+
 ```
+
 Ci,Cy,Re,Sp,Sq: Area(or surface area) & Perimeter
 
+  
+
 Triangles: Perimeter & Area (height based, ASA, SAS, SSS)
+
 ```
+
   
 
 ## Usage
+
+  
 
   
 
