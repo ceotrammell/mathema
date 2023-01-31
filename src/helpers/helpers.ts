@@ -16,12 +16,12 @@ function parse(str: string) {
    return Function(`'use strict'; return (${str})`)()
 }
 
- /**
+/**
 * Take in a string and inject a string or number into a specific position
 * @param {string} str take in a string
 * @param {number} splitAt take in a position you want to split at and to inject into
 * @param {string | number} inject take in a string or number you want to inject
-* @return {string} split `str` at `splitAt` and inject `inject` into that position 
+* @return {string} split `str` at `splitAt` and place the `inject` into that position 
 */
 function sliceBuilder(str: string, splitAt: number, inject: number) {
    let front = str.slice(0, splitAt);
@@ -29,6 +29,13 @@ function sliceBuilder(str: string, splitAt: number, inject: number) {
    return front + inject + back;
 }
 
+/**
+* Sub helper function that takes in a set of 3 numbers to help `sqrt` perform its task
+* @param {number} n number
+* @param {number} i number
+* @param {number} j number
+* @return {string} return `mid` or `square(n, mid, j)` or `square(n, i, mid)`
+*/
 export function square(n: number, i: number, j: number): number {
 
    let mid = (i + j) / 2;
@@ -42,6 +49,11 @@ export function square(n: number, i: number, j: number): number {
    }
 }
 
+/**
+* taken in a number `num` that gives back the square root of a value
+* @param {number} num number to find square root of
+* @return {string} return `num`'s square root value
+*/
 export function sqrt(num: number): any {
    let i = 1;
    const found = false;
@@ -57,6 +69,11 @@ export function sqrt(num: number): any {
    }
 }
 
+/**
+* taken in a number `num` that gives back the factorial
+* @param {number} num number to factorialize
+* @return {string} return `num`'s factorial -> `num!`
+*/
 export function factorialize(num: any): any {
    if (num < 0) 
          return -1;
