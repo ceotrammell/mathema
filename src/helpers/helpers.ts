@@ -1,18 +1,33 @@
 /**
+* taken in a number `num` that gives back the factorial
+* @param {number} num number to factorialize
+* @return {string} return `num`'s factorial -> `num!`
+*/
+export function factorialize(num: any): any {
+   if (num < 0) 
+         return -1;
+   else if (num == 0) 
+         return 1;
+   else {
+         return (num * factorialize(num - 1));
+   }
+}
+
+/**
 * Take in an array to flatten
 * @param {Array<any>} arr array to flatten
 * @return {Array<any>} array `arr` used to flatten
 */
-function flatten(arr: Array<any>): Array<any> {
+export function flatten(arr: Array<any>): Array<any> {
     return arr.reduce((acc, cur) => acc.concat(Array.isArray(cur) ? flatten(cur) : cur), []);
 };
 
 /**
-* Take in an string to parse
+* Sub helper function: take in an string to parse
 * @param {string} str string to parse
 * @return {string} string `str` to parse
 */
-function parse(str: string) {
+export function parse(str: string) {
    return Function(`'use strict'; return (${str})`)()
 }
 
@@ -23,30 +38,10 @@ function parse(str: string) {
 * @param {string | number} inject take in a string or number you want to inject
 * @return {string} split `str` at `splitAt` and place the `inject` into that position 
 */
-function sliceBuilder(str: string, splitAt: number, inject: number) {
+export function sliceBuilder(str: string, splitAt: number, inject: string | number) {
    let front = str.slice(0, splitAt);
    let back  = str.slice(splitAt, str.length);
    return front + inject + back;
-}
-
-/**
-* Sub helper function that takes in a set of 3 numbers to help `sqrt` perform its task
-* @param {number} n number
-* @param {number} i number
-* @param {number} j number
-* @return {string} return `mid` or `square(n, mid, j)` or `square(n, i, mid)`
-*/
-export function square(n: number, i: number, j: number): number {
-
-   let mid = (i + j) / 2;
-   let mul = mid * mid;
-   if ((mul === n) || (Math.abs(mul - n) < 0.00001)){
-      return mid;
-   }else if (mul < n){
-      return square(n, mid, j);
-   }else{
-      return square(n, i, mid);
-   }
 }
 
 /**
@@ -70,23 +65,29 @@ export function sqrt(num: number): any {
 }
 
 /**
-* taken in a number `num` that gives back the factorial
-* @param {number} num number to factorialize
-* @return {string} return `num`'s factorial -> `num!`
+* Sub helper function: takes in a set of 3 numbers to help `sqrt` perform its task
+* @param {number} n number
+* @param {number} i number
+* @param {number} j number
+* @return {string} return `mid` or `square(n, mid, j)` or `square(n, i, mid)`
 */
-export function factorialize(num: any): any {
-   if (num < 0) 
-         return -1;
-   else if (num == 0) 
-         return 1;
-   else {
-         return (num * factorialize(num - 1));
+export function square(n: number, i: number, j: number): number {
+
+   let mid = (i + j) / 2;
+   let mul = mid * mid;
+   if ((mul === n) || (Math.abs(mul - n) < 0.00001)){
+      return mid;
+   }else if (mul < n){
+      return square(n, mid, j);
+   }else{
+      return square(n, i, mid);
    }
 }
 
 export const helpers = {
    // atan,
    // derivative,
+   factorialize,
    flatten,
    parse,
    // pow,
