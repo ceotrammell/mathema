@@ -32,6 +32,21 @@ export function parse(str: string) {
 }
 
 /**
+* Take in a number to round to the nearest dictated max decimal
+* @param {number} num take in a number that will be rounded
+* @param {number} decimals dictates max amount of decimals possible 
+(0-15 only permitted)
+* @return {string} return `num` as a rounded number based on amount of `decimals` chosen
+*/
+export function round(num: number, decimals: number) {
+   if (decimals < 0 || decimals > 15) {
+      throw new Error('make sure `decimals` is >=0 || <=15'); 
+   }
+   let prefix: any = num + "e" + decimals;
+   return Number(Math.round(prefix) + "e-" + decimals);
+}
+
+/**
 * Take in a string and inject a string or number into a specific position
 * @param {string} str take in a string
 * @param {number} splitAt take in a position you want to split at and to inject into
@@ -91,7 +106,7 @@ export const helpers = {
    flatten,
    parse,
    // pow,
-   // round,
+   round,
    sliceBuilder,
    sqrt,
 };
