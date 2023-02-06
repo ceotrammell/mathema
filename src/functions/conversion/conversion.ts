@@ -1,4 +1,4 @@
-import { conversiontable } from "../../helpers/conversiontable"
+import { conversiontable } from "../../conversions/conversiontable"
 import { helpers } from "../../helpers/helpers";
 
 /**
