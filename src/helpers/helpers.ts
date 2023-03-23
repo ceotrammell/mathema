@@ -110,7 +110,7 @@ function powerTaskObject(x: Array<any>, n: number) {
    
 }
 
-/**
+/** 
 * Take in a number to round to the nearest dictated max decimal
 * @param {number} num take in a number that will be rounded
 * @param {number} decimals dictates max amount of decimals possible 
