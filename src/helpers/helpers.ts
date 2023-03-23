@@ -23,12 +23,91 @@ export function flatten(arr: Array<any>): Array<any> {
 };
 
 /**
+* Sub helper function: used to get matrix square truthy
+* @param {Array<any>} matrix array
+* @return {boolean} return the square truthy of `matrix`
+*/
+export function isMatrixSquare(arr: Array<any>): boolean {
+   var row_count = arr.length;
+   var row_sizes = []
+   for(var i=0;i<row_count;i++){
+       row_sizes.push(arr[i].length)
+   }
+   
+   let val = [row_count, Math.min.apply(null, row_sizes)]
+
+   if (val[0] != val[1])
+   return false;
+
+   return true;
+}
+
+/**
+* Sub helper function: used to get matrix size of an array
+* @param {Array<any>} matrix array
+* @return {Array<any>} return the size of `matrix`
+*/
+export function matrixSize(arr: Array<any>): any {
+   var row_count = arr.length;
+   var row_sizes = []
+   for(var i=0;i<row_count;i++){
+       row_sizes.push(arr[i].length)
+   }
+   return [row_count, Math.min.apply(null, row_sizes)]
+}
+
+/**
 * Sub helper function: take in an string to parse
 * @param {string} str string to parse
-* @return {string} string `str` to parse
+* @return {string} return string `str` that is parsed
 */
 export function parse(str: string) {
    return Function(`'use strict'; return (${str})`)()
+}
+
+/**
+* Take in a single number, object or nested objects and get the power of it, based on multiplier, if any
+* @param {Array<any> | number} entity single number or object of pair sets
+* @param {number} multiplier multiplier to multiply against `entity`
+* @return {string} return power result of `entity` based on `multiplier`
+*/
+export function pow(entity: Array<any> | number, multiplier: number): any {
+
+   if (typeof entity == 'number') {
+      return powerTaskNumber(entity, multiplier);
+   } else if (typeof entity == 'object') {
+      if (!isMatrixSquare(entity))
+      throw new Error(`${matrixSize(entity)} is not a square`); 
+      //todo
+      return powerTaskObject(entity, multiplier)
+      
+   } else {
+      throw new Error(`${typeof entity} type is not allowed`); 
+   }
+}
+
+/**
+* Sub helper function: used for pow, take in x and y to find the power of a number
+* @param {number} x number
+* @param {number} y number for power
+* @return {string} return the power of `x` and `y`
+*/
+function powerTaskNumber(x: number, n: number) {
+   if (n === 1) return x;
+   let temp: number = powerTaskNumber(x, n >> 1);
+   return n % 2
+       ? x * temp * temp
+       : temp * temp;
+}
+
+/**
+* Sub helper function: used for pow, take in x and y to find the power of a object
+* @param {Array<any>} x object
+* @param {number} y number for power
+* @return {string} return the power of `x` and `y`
+*/
+function powerTaskObject(x: Array<any>, n: number) {
+   
 }
 
 /**
@@ -38,7 +117,7 @@ export function parse(str: string) {
 (0-15 only permitted)
 * @return {string} return `num` as a rounded number based on amount of `decimals` chosen
 */
-export function round(num: number, decimals: number) {
+export function round(num: number, decimals: number): any {
    if (decimals < 0 || decimals > 15) {
       throw new Error('make sure `decimals` is >=0 || <=15'); 
    }
@@ -53,7 +132,7 @@ export function round(num: number, decimals: number) {
 * @param {string | number} inject take in a string or number you want to inject
 * @return {string} split `str` at `splitAt` and place the `inject` into that position 
 */
-export function sliceBuilder(str: string, splitAt: number, inject: string | number) {
+export function sliceBuilder(str: string, splitAt: number, inject: string | number): any {
    let front = str.slice(0, splitAt);
    let back  = str.slice(splitAt, str.length);
    return front + inject + back;
@@ -104,7 +183,9 @@ export const helpers = {
    // derivative,
    factorialize,
    flatten,
+   isMatrixSquare,
    parse,
+   matrixSize,
    // pow,
    round,
    sliceBuilder,
