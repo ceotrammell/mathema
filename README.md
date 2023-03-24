@@ -103,7 +103,7 @@ import { algebra } from 'mathema';
 | geometry.triangle.area.perimeter()                 | `a: number, b: number, c: number` | take in 3 values, side a, b and c to get final surface area|                                                                                              |
 | geometry.triangle.area.sas()                 | `a: number, y: number, b: number` | strictly for triangle type of SAS, also known as Side-Angle-Side Postulate -> take in 3 values, side a, side b, and angle y|                                                                                              |
 | geometry.triangle.area.sss()                 | `a: number, b: number, c: number` | strictly for triangle type of SSS, also known as Side-Angle-Side Postulate (Heron's formula) -> take in 3 values, side a, b and c|                                                                                              
-<h4><i>Helpers:</i></h4>                                                                                                |
+|<h4><i>Helpers:</i></h4>                                                                                                |
 <b>Factorialize</b>|
 | helpers.factorialize()                 | `num: any` | taken in a number num that gives back the factorial|
 <b>Flatten</b>|
