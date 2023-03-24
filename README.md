@@ -1,4 +1,3 @@
-
 <div align="center">
   <a href="https://www.chartjs.org/" target="_blank">
     <h1 align="center">MATHEMA</h1>
@@ -33,13 +32,12 @@ import { algebra } from 'mathema';
 
 ## Functions
 
-
 | Function                  | Params                     | Description                                                                                                   |
-| ------------------------ | ------------------------ | --------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-<h4><i>Algebra (Arithmetic):</i></h4>|                                                                                                |
+| ------------------------ | ------------------------ | ------------------------------------------------------------------------------------------------------------- |
+|<h4><i>Algebra (Arithmetic):</i></h4>
 <b>LCM</b>|
 | algebra.arithmetic.lcm.arr()                 | `arr: any[]`                              | Take in an array of numbers and find the least common multiple                                                             |
-| algebra.arithmetic.lcm.pair()       | `x: number, y: number` | Take in an set of 2 numbers, x and y, and find the least common multiple                                                              
+| algebra.arithmetic.lcm.pair()       | `x: number, y: number` | Take in an set of 2 numbers, x and y, and find the least common multiple       |                                                       
  <b>GCD</b>|
 | algebra.arithmetic.gcd.arr()                 | `x: number, y: number`                              | Take in an array of numbers and find the greatest common divisor                                                             |
 | algebra.arithmetic.gcd.pair()       | `arr: any[]` | Take in an set of 2 numbers, x and y, and find the greatest common divisor                                                              
@@ -116,4 +114,3 @@ import { algebra } from 'mathema';
 | helpers.sliceBuilder()                 | `str: string, splitAt: number, inject: string | number` | Take in a string and inject a string or number into a specific position|
 <b>Square Root</b>|
 | helpers.sqrt()                 | `num: number` | Take in a number num that gives back the square root of a value
-
