@@ -4,12 +4,12 @@ import { helpers } from '../../../../helpers/helpers.js';
 /**
 * strictly for triangle type of ASA, also known as Angle-Side-Angle Postulate -> 
 * take in 3 values, side a, angle b and angle y 
-* @param  {number} b value for angle β(bilabial fricative)
 * @param  {number} a value for side
+* @param  {number} b value for angle β(bilabial fricative)
 * @param  {number} y value for angle γ(gamma)
 * @return {number} area with known 2 angles(β and γ) and 1 side for -> `a`^2 * sin(β:`b`) * sin(γ:`y`) / (2 * sin(β:`b` + γ:`y`))
 */
-export function asa(b: number, a: number, y: number): number {    
+export function asa(a: number, b: number, y: number): number {    
     let unknownAngle = constants.triangle - b - y;
 
     if (b + y >= constants.triangle) {
