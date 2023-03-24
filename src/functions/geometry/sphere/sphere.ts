@@ -11,9 +11,9 @@ export function surfaceArea(r: number): number {
 }
 
 /**
-* take in 1 value, radius to get final surface area
+* take in 1 value, radius to get final volume
 * @param  {number} r value of radius
-* @return {number} surface area of (4/3)π * radius:`r`^3
+* @return {number} volume of (4/3)π * radius:`r`^3
 */
 export function volume(r: number): number {
     
