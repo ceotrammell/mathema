@@ -1,5 +1,5 @@
 import { arithmetic } from './arithmetic/arithmetic.js';
 
-export const algerbra = {
+export const algebra = {
     arithmetic,
 }
