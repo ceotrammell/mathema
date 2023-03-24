@@ -111,6 +111,6 @@ import { algebra } from 'mathema';
 <b>Round</b>|
 | helpers.flatten()                 | `num: number, decimals: number` | Take in a number num to round to the nearest dictated max number decimals (0-15 decimals only permitted)|
 <b>Slice Builder</b>|
-| helpers.sliceBuilder()                 | `str: string, splitAt: number, inject: string | number` | Take in a string and inject a string or number into a specific position|
+| helpers.sliceBuilder()                 | `str: string, splitAt: number, inject: string or number` | Take in a string and inject a string or number into a specific position|
 <b>Square Root</b>|
 | helpers.sqrt()                 | `num: number` | Take in a number num that gives back the square root of a value
